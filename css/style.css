@@ -1,4 +1,4 @@
-/* ===== RunLog 跑步记录 · 技术支持/隐私政策 站点样式 =====
+/* ===== 走也 Run on · 技术支持/隐私政策 站点样式 =====
    与 App 图标一致：红底径向渐变 + 白色剪影 + 大圆角 + 简洁排版 */
 
 :root {
@@ -128,4 +128,32 @@ a:hover { text-decoration: underline; }
   max-width: var(--maxw); margin: 36px auto 0; padding: 18px 24px 0;
   border-top: 1px solid var(--line); color: var(--ink-faint); font-size: 13px;
   display: flex; justify-content: space-between; flex-wrap: wrap; gap: 8px;
+}
+
+/* ---------- 首页产品展示区（2026-09-17 新增：应用官网需要有下载入口 + 应用介绍） ---------- */
+.hero-icon {
+  width: 108px; height: 108px; border-radius: 24px; display: block;
+  margin: 0 auto 26px; box-shadow: 0 16px 40px rgba(29, 29, 31, .18);
+}
+.hero .official-name { font-size: 14px; color: var(--ink-faint); margin-top: 14px; }
+.hero-badge { display: inline-block; margin-top: 30px; }
+.hero-badge img { height: 54px; width: auto; display: block; }
+.hero-badge:hover { text-decoration: none; }
+.hero-badge:hover img { opacity: .86; }
+.meta-chips {
+  display: flex; flex-wrap: wrap; gap: 8px; justify-content: center;
+  margin-top: 26px; list-style: none; padding: 0;
+}
+.meta-chips li {
+  font-size: 13px; color: var(--ink-soft); line-height: 1.6;
+  border: 1px solid var(--line); border-radius: 999px; padding: 4px 13px;
+}
+.shots {
+  display: flex; gap: 20px; overflow-x: auto; padding: 4px 0 16px;
+  scroll-snap-type: x mandatory;
+}
+.shots img {
+  width: 240px; flex: 0 0 auto; display: block; border-radius: 16px;
+  border: 1px solid var(--line); box-shadow: var(--shadow);
+  scroll-snap-align: start;
 }
